@@ -1,4 +1,10 @@
-function s = sigmoid(x)
+function s = sigmoid(X, theta)
+	
+	%Adding bias
+	X = [ones(length(X),1), X]
 
-%Calculate Sigmoid function of x
-s = 1./(1+exp(-x));
+	z = X * theta;
+
+
+%Calculate Sigmoid function of z
+s = 1./(1+exp(-z));
