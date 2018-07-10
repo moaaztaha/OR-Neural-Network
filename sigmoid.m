@@ -1,7 +1,7 @@
 function s = sigmoid(X, theta)
 	
 	%Adding bias
-	X = [ones(length(X),1), X]
+	X = [ones(length(X),1), X];	
 
 	z = X * theta;
 
